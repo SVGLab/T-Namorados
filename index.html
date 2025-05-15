@@ -1,252 +1,243 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Japatê | Dia dos Namorados 2025</title>
+
+<!-- ====================  CORES E TIPOGRAFIA  ==================== -->
 <style>
-    :root {
-        --orange: #F56E1E;
-        --dark: #4D4D4D;
-        --light: #ffffff;
-        --maxw: 960px;
-    }
-    * { box-sizing: border-box; }
-    body {
-        margin: 0;
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        color: var(--dark);
-        line-height: 1.6;
-    }
-    header {
-        background: var(--orange);
-        color: var(--light);
-        text-align: center;
-        padding: 3rem 1rem 2rem;
-    }
-    header img {
-        max-width: 220px;
-        width: 35%;
-        height: auto;
-    }
-    header h1 {
-        margin: 1rem 0 0.5rem;
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
-    header h2 {
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 300;
-    }
-    nav {
-        position: sticky;
-        top: 0;
-        background: var(--light);
-        border-bottom: 2px solid var(--orange);
-        z-index: 1000;
-    }
-    nav ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5rem;
-    }
-    nav li { margin: 0.25rem; }
-    nav a {
-        color: var(--orange);
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.4rem 0.8rem;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    nav a:hover,
-    nav a:focus {
-        background: var(--orange);
-        color: var(--light);
-    }
-    section {
-        max-width: var(--maxw);
-        margin: auto;
-        padding: 2.5rem 1rem;
-    }
-    h3 {
-        color: var(--orange);
-        margin-top: 0;
-    }
-    h4 { margin-bottom: 0.3rem; }
-    .subsection { padding-left: 1rem; }
-    ul { padding-left: 1.2rem; }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 0.6rem;
-        text-align: left;
-    }
-    th {
-        background: var(--orange);
-        color: var(--light);
-    }
-    @media (max-width: 600px) {
-        header h1 { font-size: 1.5rem; }
-        nav ul { flex-direction: column; }
-    }
+  :root {
+    --orange: #f56e1e;
+    --dark:   #4d4d4d;
+    --light:  #ffffff;
+    --maxw:   960px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background: var(--light);
+  }
+
+  /* ----------  CABEÇALHO  ---------- */
+  header {
+    background: var(--orange);
+    color: var(--light);
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+  }
+  header img {
+    width: 220px;           /* ajuste livre */
+    max-width: 50%;
+    height: auto;
+  }
+  header h1 { margin: 1rem 0 0.5rem; font-size: 2.2rem; }
+  header h2 { font-weight: 300; font-size: 1.25rem; }
+
+  /* ----------  MENU FIXO  ---------- */
+  nav {
+    position: sticky;
+    top: 0;
+    background: var(--light);
+    border-bottom: 2px solid var(--orange);
+    z-index: 999;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    padding: .6rem;
+  }
+  nav a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    padding: .4rem .8rem;
+    border-radius: 4px;
+    transition: .2s;
+  }
+  nav a:hover,
+  nav a:focus {
+    background: var(--orange);
+    color: var(--light);
+  }
+
+  /* ----------  SEÇÕES  ---------- */
+  section {
+    max-width: var(--maxw);
+    margin: auto;
+    padding: 2.5rem 1rem;
+  }
+  h3      { color: var(--orange); margin-bottom: .8rem; }
+  h4      { margin: 1.5rem 0 .4rem; color: var(--dark); }
+  ul      { padding-left: 1.2rem; margin-top: .5rem; }
+  table   { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+  th, td  { border: 1px solid #ddd; padding: .6rem; text-align: left; }
+  th      { background: var(--orange); color: var(--light); }
+
+  /* ----------  RESPONSIVO  ---------- */
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.6rem; }
+    nav ul    { flex-direction: column; }
+  }
 </style>
 </head>
-<body>
 
+<body>
+<!-- =============================================================== -->
 <header>
-    <img src="Mono branco.png" alt="Logo Japatê">
-    <h1>Dia dos Namorados 2025</h1>
-    <h2>Aquele Tê que te conquista</h2>
+  <!-- IMPORTANTE: coloque o arquivo em assets/img/mono-branco.png -->
+  <img src="./assets/img/mono-branco.png" alt="Logo Japatê" />
+  <h1>Dia dos Namorados 2025</h1>
+  <h2>Aquele Tê que te conquista</h2>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#contexto">Contexto Geral</a></li>
-        <li><a href="#desdobramento">Desdobramento</a></li>
-        <li><a href="#conceito">Conceito</a></li>
-        <li><a href="#narrativa">Narrativa</a></li>
-        <li><a href="#campanha">Campanha</a></li>
-        <li><a href="#ativacoes">Ativações</a></li>
-        <li><a href="#internas">Ativações Internas</a></li>
-        <li><a href="#complementares">Estratégias</a></li>
-        <li><a href="#cronograma">Cronograma</a></li>
-        <li><a href="#finais">Considerações</a></li>
-    </ul>
+  <ul>
+    <li><a href="#contexto">Contexto</a></li>
+    <li><a href="#desdobramento">Desdobramento</a></li>
+    <li><a href="#conceito">Conceito</a></li>
+    <li><a href="#narrativa">Narrativa</a></li>
+    <li><a href="#campanha">Campanha</a></li>
+    <li><a href="#ativacoes">Ativações</a></li>
+    <li><a href="#internas">Internas</a></li>
+    <li><a href="#complementares">Estratégias</a></li>
+    <li><a href="#cronograma">Cronograma</a></li>
+    <li><a href="#finais">Final</a></li>
+  </ul>
 </nav>
 
+<!-- =========================  CONTEÚDO  ========================= -->
 <section id="contexto">
-<h3>Contexto Geral</h3>
-<p>Passada a correria do Dia das Mães, temos diante de nós uma excelente oportunidade de reforçar nossos diferenciais em uma data em que a maioria dos concorrentes se preocupa apenas com reservas. Neste momento, o comportamento de consumo nos permite tensionar ainda mais o nosso “Tê a mais”.</p>
-<p>Se no Dia das Mães o movimento é familiar, ancorado em conforto, segurança e tradição, no Dia dos Namorados rompemos a bolha da confiança e avançamos para o território do ego: é a chance de conquistar novos públicos para quem somos <em>ritual</em> — e não rotina. Todo o valor da marca entra em cena para proporcionar momentos únicos a quem quer impressionar quem ama, sobretudo nos inícios de relacionamento.</p>
+  <h3>Contexto Geral</h3>
+  <p>Passada a correria do Dia das Mães, temos diante de nós uma excelente oportunidade de reforçar nossos diferenciais em uma data em que a maioria dos concorrentes se preocupa apenas com reservas. Neste momento, o comportamento de consumo nos permite tensionar ainda mais o nosso “Tê a mais”.</p>
+  <p>Se no Dia das Mães o movimento é familiar, ancorado em conforto, segurança e tradição, no Dia dos Namorados rompemos a bolha da confiança e avançamos para o território do ego: é a chance de conquistar novos públicos para quem somos <em>ritual</em> — e não rotina. Todo o valor da marca entra em cena para proporcionar momentos únicos a quem quer impressionar quem ama, sobretudo no início do relacionamento.</p>
 </section>
 
 <section id="desdobramento">
-<h3>Desdobramento Estratégico</h3>
-<p>Nosso posicionamento nos coloca em vantagem: somos confiança para quem não quer se decepcionar e status para quem deseja impressionar. É uma oportunidade única de criar novas conexões e gerar mais valor sem recorrer a promoções. Primeiro (re)conectamos, depois encantamos. Com isso, além de garantir casa cheia e delivery aquecido, permaneceremos vivos na memória e no coração do público.</p>
+  <h3>Desdobramento Estratégico</h3>
+  <p>Nosso posicionamento nos coloca em vantagem: somos confiança para quem não quer se decepcionar e status para quem deseja impressionar. É uma oportunidade única de criar novas conexões e gerar mais valor, sem recorrer a promoções. Primeiro (re)conectamos, depois encantamos. Assim, além de garantir casa cheia e delivery aquecido, permaneceremos vivos na memória e no coração do público.</p>
 </section>
 
 <section id="conceito">
-<h3>Conceito Criativo</h3>
-<p>Datas comerciais são oportunidades de reforçar nossos valores e manter consistência na comunicação. Desta vez, exaltaremos o diferencial que faz alguém — ou um japa — ser escolhido para a vida.</p>
-<blockquote>Aquele Tê que te conquista</blockquote>
+  <h3>Conceito Criativo</h3>
+  <p>Datas comerciais são oportunidades de reforçar nossos valores e manter consistência na comunicação. Desta vez, exaltaremos o diferencial que faz alguém&nbsp;— ou um japa&nbsp;— ser escolhido para a vida.</p>
+  <blockquote>Aquele Tê que te conquista.</blockquote>
 </section>
 
 <section id="narrativa">
-<h3>Narrativa</h3>
-<p>Todo amor tem uma história. E todo amado tem um “Tê” único, que conquista de imediato e mantém a chama acesa. Pode ser o sorriso especial, o jeitinho carinhoso ou a conversa que conforta. Esse “Tê” vira namoro, casamento e mantém o encanto ao longo do tempo. Onde ele está, toda celebração precisa de um Tê a mais.</p>
+  <h3>Narrativa</h3>
+  <p>Todo amor tem uma história. E todo amado tem um “Tê” único, que conquista de imediato e mantém a chama acesa. Pode ser o sorriso especial, o jeitinho carinhoso ou a conversa que conforta. Esse “Tê” vira namoro, casamento e continua alimentando o encanto. Onde ele está, toda celebração precisa de um Tê a mais.</p>
 </section>
 
 <section id="campanha">
-<h3>Campanha Ampla</h3>
+  <h3>Campanha Ampla</h3>
 
-<h4>1. Vídeo Principal (Reels)</h4>
-<ul>
-<li>Cena 1 – Close em um dos parceiros: “O que você viu nele?”</li>
-<li>Cena 2 – Close no outro: “O que você viu nela?”</li>
-<li>Cena 3 – Casal junto: “Quem pergunta, geralmente ainda não encontrou aquele Tê a mais.”</li>
-<li>Cena 4 – Abraço, ambiente em evidência: “Aquele Tê que conforta.”</li>
-<li>Cena 5 – Prato exclusivo chegando: “Aquele Tê que surpreende.”</li>
-<li>Cena 6 – Drinks e sorrisos: “Aquele Tê que deixa tudo mais leve.”</li>
-<li>Cena 7 – Cena descontraída: “Aquele Tê que te conquista todo dia.”</li>
-<li>Cena 8 – Assinatura: “É por isso que o Dia dos Namorados também pede um TÊ a mais.”</li>
-</ul>
+  <h4>1.&nbsp;Vídeo (Reels)</h4>
+  <ul>
+    <li>Cena 1 – “O que você viu nele?”</li>
+    <li>Cena 2 – “O que você viu nela?”</li>
+    <li>Cena 3 – “Quem pergunta, geralmente ainda não encontrou aquele Tê a mais.”</li>
+    <li>Cena 4 – “Aquele Tê que conforta.”</li>
+    <li>Cena 5 – “Aquele Tê que surpreende.”</li>
+    <li>Cena 6 – “Aquele Tê que deixa tudo mais leve.”</li>
+    <li>Cena 7 – “Aquele Tê que te conquista todo dia.”</li>
+    <li>Cena 8 – Assinatura: “É por isso que o Dia dos Namorados também pede um TÊ a mais.”</li>
+  </ul>
 
-<h4>Peças Complementares</h4>
-<p>Feed e Stories estáticos, com cenas do vídeo.</p>
+  <h4>Peças Complementares</h4>
+  <p>Feed e Stories estáticos, com cenas do vídeo.</p>
 
-<h4>Produção</h4>
-<ul>
-<li>Videomaker profissional</li>
-<li>3 casais com perfil Japatê</li>
-</ul>
+  <h4>Produção</h4>
+  <ul>
+    <li>Videomaker profissional</li>
+    <li>Três casais com perfil Japatê</li>
+  </ul>
 </section>
 
 <section id="ativacoes">
-<h3>Ativações por Modelo de Operação</h3>
+  <h3>Ativações por Modelo de Operação</h3>
 
-<h4>🏪 Lojas Físicas — “Aquele Tê que conecta”</h4>
-<p><strong>Mecânica:</strong> As XX primeiras reservas em cada unidade participam da ação. Após a reserva, o casal preenche um cadastro rápido com:</p>
-<ul class="subsection">
-<li>Peça especial do Japatê que conecta o casal</li>
-<li>Data de aniversário de namoro/casamento</li>
-</ul>
-<p><strong>Benefícios:</strong></p>
-<ul class="subsection">
-<li><em>O Tê a mais</em> – Entrada personalizada com discurso do garçom.</li>
-<li><em>O Tê eterno</em> – Cartão “Aquele Tê eterno” com jantar de aniversário por conta da casa.</li>
-<li><em>O Tê que embala</em> – Playlist exclusiva com a música do casal.</li>
-</ul>
+  <h4>🏪 Lojas — &ldquo;Aquele Tê que conecta&rdquo;</h4>
+  <p><strong>Mecânica:</strong> As XX primeiras reservas em cada unidade participam da ação. Após a reserva, o casal preenche um cadastro com:</p>
+  <ul>
+    <li>Peça especial do Japatê que conecta o casal</li>
+    <li>Data de aniversário de namoro/casamento</li>
+  </ul>
+  <p><strong>Benefícios:</strong></p>
+  <ul>
+    <li><em>O Tê a mais</em> – Entrada personalizada com discurso do garçom.</li>
+    <li><em>O Tê eterno</em> – Cartão com jantar de aniversário por conta da casa.</li>
+    <li><em>O Tê que embala</em> – Playlist exclusiva com a música do casal.</li>
+  </ul>
 
-<h4>🛵 Delivery — “Aquele Tê que inspira”</h4>
-<p>Criação da assistente virtual <strong>Maitê</strong> (beta) para dicas de vinhos, decoração, playlists e harmonizações, enriquecendo a experiência de quem pede Tê pelo delivery.</p>
+  <h4>🛵 Delivery — &ldquo;Aquele Tê que inspira&rdquo;</h4>
+  <p>Criação da assistente virtual <strong>Maitê</strong> (beta) para dicas de vinhos, decoração, playlists e harmonizações.</p>
 
-<h4>🍱 Buffet — “Aquele Tê que te conquista todo dia”</h4>
-<ul class="subsection">
-<li><strong>Aquele Tê que aproxima</strong> – Benefício acumulativo especial para a semana dos namorados.</li>
-<li><strong>Aquele Tê que conhece</strong> – Desafio interativo com influenciador ou staff.</li>
-</ul>
+  <h4>🍱 Buffet — &ldquo;Aquele Tê que te conquista todo dia&rdquo;</h4>
+  <ul>
+    <li><strong>Aquele Tê que aproxima</strong> – Benefício acumulativo durante a semana.</li>
+    <li><strong>Aquele Tê que conhece</strong> – Desafio interativo com influenciador ou staff.</li>
+  </ul>
 </section>
 
 <section id="internas">
-<h3>Ativações Internas</h3>
+  <h3>Ativações Internas</h3>
 
-<h4>Franqueados</h4>
-<ul>
-<li>Espaço virtual com guias, FAQ e materiais da campanha.</li>
-<li>Desafio de Engajamento: unidade mais ativa ganha consultoria de Instagram + mídia de R$ 1k.</li>
-</ul>
+  <h4>Franqueados</h4>
+  <ul>
+    <li>Espaço virtual com guias, FAQ e materiais da campanha.</li>
+    <li>Desafio de engajamento: unidade mais ativa recebe consultoria + mídia de R$ 1k.</li>
+  </ul>
 
-<h4>Equipe — “Ideias com um Tê a mais”</h4>
-<p>Espaço para sugestões de operação, decoração, pratos e atendimento.</p>
+  <h4>Equipe — “Ideias com um Tê a mais”</h4>
+  <p>Espaço para sugestões de operação, decoração, pratos e atendimento.</p>
 
-<h4>Auê — Jogo Desafio</h4>
-<p>“Aquele Tê que conhece você” desafia o casal a adivinhar o combinado favorito um do outro.</p>
+  <h4>Auê — Jogo Desafio</h4>
+  <p>“Aquele Tê que conhece você” desafia o casal a adivinhar o combinado favorito um do outro.</p>
 
-<h4>Influenciadores</h4>
-<p>“Qual o Tê que te conquistou?” — Casais contam, de forma descontraída, a característica única que os encantou.</p>
+  <h4>Influenciadores</h4>
+  <p>“Qual o Tê que te conquistou?” — casais contam, de forma descontraída, a característica única que os encantou.</p>
 </section>
 
 <section id="complementares">
-<h3>Estratégias Complementares</h3>
-<ul>
-<li><strong>Ativação VIP:</strong> reservas exclusivas para casais frequentes.</li>
-<li><strong>Delivery Premium:</strong> agendamento antecipado para clientes campeões de pedidos.</li>
-</ul>
+  <h3>Estratégias Complementares</h3>
+  <ul>
+    <li><strong>Ativação VIP:</strong> reservas exclusivas para casais frequentes.</li>
+    <li><strong>Delivery Premium:</strong> agendamento antecipado para clientes campeões de pedidos.</li>
+  </ul>
 </section>
 
 <section id="cronograma">
-<h3>Cronograma de Implementação</h3>
-<table>
-<tr><th>Período</th><th>Ações</th></tr>
-<tr><td>15–19/05</td><td>Avaliação do planejamento, ajustes e aprovação</td></tr>
-<tr><td>19–25/05</td><td>Planejamento de mídia, produção de peças</td></tr>
-<tr><td>26–31/05</td><td>Ativações internas e externas, ajustes finais</td></tr>
-<tr><td>27/05</td><td>Apresentação aos franqueados</td></tr>
-<tr><td>28/05</td><td>Lançamento “Ideias com um Tê a mais”</td></tr>
-<tr><td>29/05</td><td>Início da campanha – vídeo geral</td></tr>
-<tr><td>01–08/06</td><td>Ativações capilarizadas + setup</td></tr>
-<tr><td>09–11/06</td><td>Ajustes finais e peças de apelo</td></tr>
-<tr><td>12/06</td><td>DIA DOS NAMORADOS — Experiência impecável e monitoramento</td></tr>
-</table>
+  <h3>Cronograma</h3>
+  <table>
+    <tr><th>Período</th><th>Ações</th></tr>
+    <tr><td>15–19/05</td><td>Avaliação, ajustes e aprovação</td></tr>
+    <tr><td>19–25/05</td><td>Planejamento de mídia e produção de peças</td></tr>
+    <tr><td>26–31/05</td><td>Ativações internas/externas e ajustes finais</td></tr>
+    <tr><td>27/05</td><td>Apresentação aos franqueados</td></tr>
+    <tr><td>28/05</td><td>Lançamento “Ideias com um Tê a mais”</td></tr>
+    <tr><td>29/05</td><td>Início da campanha — vídeo geral</td></tr>
+    <tr><td>01–08/06</td><td>Ativações capilarizadas + setup</td></tr>
+    <tr><td>09–11/06</td><td>Ajustes finais e peças de apelo</td></tr>
+    <tr><td>12/06</td><td>DIA D — Experiência impecável e monitoramento</td></tr>
+  </table>
 </section>
 
 <section id="finais">
-<h3>Considerações Finais</h3>
-<p>Temos um escopo robusto, multicanal e personalizado — a oportunidade ideal para alinhar valor e resultado. Com investimentos enxutos em mídia e foco na experiência, especialmente a personalização nas lojas, podemos dar essa nova cara ao Tê. Vamos juntos fazer acontecer!</p>
+  <h3>Considerações Finais</h3>
+  <p>Temos um escopo robusto, multicanal e personalizado. É a oportunidade ideal para alinhar valor e resultado. Com investimentos enxutos em mídia e foco na experiência, especialmente a personalização nas lojas, podemos dar essa nova cara ao Tê. Vamos juntos fazer acontecer!</p>
 </section>
 
-<footer style="background: var(--orange); color: var(--light); text-align:center; padding:1rem;">
-    <p>✨ A VIDA TEM QUE TÊ MOMENTOS INESQUECÍVEIS ✨</p>
+<footer style="background: var(--orange); color: var(--light); text-align: center; padding: 1rem;">
+  ✨ A VIDA TEM QUE TÊ MOMENTOS INESQUECÍVEIS ✨
 </footer>
-
+<!-- =============================================================== -->
 </body>
 </html>
